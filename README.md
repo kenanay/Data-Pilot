@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Data Pilot v1.0.0
 
 **A Modern Data Management Application with Authentication & Pipeline Processing**
@@ -160,3 +161,7 @@ The frontend is built with React and uses:
 ## License
 
 This project is licensed under the MIT License.
+=======
+# Data-Pilot
+A modern full-stack data management app with authentication, FastAPI backend, and a React frontend. Built for rapid startup, testing, and deployment.
+>>>>>>> b373cb80839eb937774631461a2bb974991a92af
