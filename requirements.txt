@@ -1,0 +1,29 @@
+# Core FastAPI
+fastapi
+uvicorn[standard]
+
+# Database
+sqlalchemy[asyncio]
+aiosqlite
+
+# Validation and Settings
+pydantic
+pydantic-settings
+
+# Authentication
+python-jose[cryptography]
+passlib[bcrypt]
+
+# File handling
+python-multipart
+
+# Environment and Configuration
+python-dotenv
+
+# Testing
+pytest
+httpx
+pytest-asyncio# B
+rowser testing
+playwright>=1.30.0
+pytest-playwright>=0.3.0

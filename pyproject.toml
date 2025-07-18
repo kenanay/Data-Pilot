@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "data_pilot"
+version = "1.0.0"
+description = "Data Pilot - Proprietary Web Application by Kenan AY"
+authors = ["Kenan AY <kenanay34@gmail.com>"]
+packages = [{ include = "app" }]
+
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+# Core FastAPI
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+
+# Database
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.41"}
+aiosqlite = "^0.21.0"
+
+# Validation and Settings
+pydantic = "*"
+pydantic-settings = "^2.10.0"
+
+# Authentication
+python-jose = {extras = ["cryptography"], version = "*"}
+passlib = {extras = ["bcrypt"], version = "*"}
+
+# File handling
+python-multipart = "*"
+
+# Environment and Configuration
+python-dotenv = "*"
+
+# Testing
+pytest = "*"
+httpx = "*"
+pytest-asyncio = "*"
+
+# Browser testing
+playwright = "^1.30.0"
+pytest-playwright = "^0.3.0"
