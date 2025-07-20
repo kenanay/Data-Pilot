@@ -35,10 +35,12 @@
 
 - [x] 5. Create simplified data models
 
-  - Update `app/models/user.py` with essential User fields only
-  - Create or update data model for user data input (`app/models/data.py`)
+  - Update `app/models/user.py` with essential User fields supporting Turkish characters
+  - Create or update data model for user data input (`app/models/data.py`) with UTF-8 support
   - Remove unused models: analysis, dataset, report
-  - Update database initialization to work with simplified models
+  - Update database initialization to work with simplified models and UTF-8 encoding
+  - Ensure all text fields support Turkish characters (ç, ğ, ı, ö, ş, ü)
+  - Configure database collation for proper Turkish character sorting and searching
   - _Requirements: 3.2, 4.4_
 
 - [x] 6. Implement essential API endpoints
@@ -59,10 +61,12 @@
 
 - [x] 8. Implement data input and display components
 
-  - Create data input form component with validation
-  - Create data display component (table/list view)
-  - Add proper form submission handling with API integration
-  - Implement real-time validation and error display
+  - Create data input form component with validation supporting Turkish characters
+  - Create data display component (table/list view) with UTF-8 Turkish character support
+  - Add proper form submission handling with API integration preserving Turkish encoding
+  - Implement real-time validation and error display with Turkish language support
+  - Ensure proper rendering and storage of Turkish characters (ç, ğ, ı, ö, ş, ü)
+  - Add Turkish character validation patterns for form inputs
   - _Requirements: 3.1, 3.2, 3.3, 3.5_
 
 - [x] 9. Fix authentication flow
