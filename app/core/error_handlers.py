@@ -9,6 +9,7 @@ from sqlalchemy.exc import SQLAlchemyError, IntegrityError
 from typing import Union, Dict, Any
 import logging
 import traceback
+from datetime import datetime
 
 # Set up logging
 logger = logging.getLogger(__name__)
@@ -57,7 +58,8 @@ def create_error_response(
         "error": True,
         "status_code": status_code,
         "message": message,
-        "timestamp": "2024-01-01T00:00:00Z"  # This would be dynamic in real implementation
+        # Include the current UTC time to aid debugging on the client side
+        "timestamp": datetime.utcnow().isoformat() + "Z",
     }
     
     if details:
